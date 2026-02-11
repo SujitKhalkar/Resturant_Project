@@ -1,0 +1,108 @@
+{% extends "Base_App/layout.html" %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<!-- HERO SECTION -->
+<section class="hero-section">
+  <div class="hero-content">
+    <h1>Welcome to Our Restaurant</h1>
+    <p>Fresh • Tasty • Hygienic Food</p>
+    <a href="{% url 'menu' %}" class="btn btn-warning btn-lg">View Menu</a>
+  </div>
+</section>
+<section class="why-us">
+  <div class="container">
+    <h2 class="section-title">Why Choose Us</h2>
+
+    <div class="row text-center">
+      <div class="col-md-3">
+        <div class="why-card">
+          <h4>🍽 Quality Food</h4>
+          <p>Fresh ingredients & hygienic cooking</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="why-card">
+          <h4>👨‍🍳 Expert Chefs</h4>
+          <p>Experienced chefs with passion</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="why-card">
+          <h4>⏱ Fast Service</h4>
+          <p>Quick order & timely delivery</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="why-card">
+          <h4>❤️ Loved by Customers</h4>
+          <p>Trusted by hundreds of food lovers</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- BIG FOOD IMAGE SECTION -->
+<section class="big-image-section">
+  <div class="image-overlay">
+    <h2>Delicious Food Made With Love ❤️</h2>
+    <p>Experience taste like never before</p>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="why-us">
+  <div class="container">
+    <h2 class="text-center mb-5">Why Choose Us?</h2>
+
+    <div class="row text-center">
+      <div class="col-md-3">
+        <div class="why-card">
+          <h3>🍲</h3>
+          <h5>Fresh Food</h5>
+          <p>Always fresh and hygienic meals</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="why-card">
+          <h3>🚚</h3>
+          <h5>Fast Service</h5>
+          <p>Quick preparation & delivery</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="why-card">
+          <h3>👨‍🍳</h3>
+          <h5>Expert Chefs</h5>
+          <p>Experienced & skilled chefs</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="why-card">
+          <h3>💰</h3>
+          <h5>Best Price</h5>
+          <p>Affordable & quality food</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <h2>Hungry? Order Your Favorite Food Now!</h2>
+  <a href="{% url 'menu' %}" class="cta-btn mt-3">Order Now</a>
+</section>
+
+{% endblock %}

@@ -1,0 +1,211 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navbar */
+.main-navbar {
+    background: linear-gradient(90deg, #1f4037, #99f2c8);
+}
+
+/* Page background */
+.page-bg {
+    background: #f4f6f9;
+    min-height: 90vh;
+}
+
+/* Headings */
+.main-heading {
+    font-weight: 800;
+    color: #1f4037;
+}
+
+.subtitle {
+    color: #555;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1f4037;
+}
+
+/* Cards */
+.food-card {
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    transition: 0.3s;
+}
+
+.food-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Images same size */
+.menu-img {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.menu-list-img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Menu list */
+.menu-item {
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+/* Price */
+.price {
+    color: #28a745;
+    font-weight: bold;
+}
+
+/* Contact */
+.contact-box {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    background: #1f4037;
+    color: white;
+    padding: 10px;
+}
+
+/* BIG IMAGE SECTION */
+.big-image-section {
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+                url("/static/Base_App/images/food-banner.3e925a2ccc70.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-overlay {
+    color: white;
+    text-align: center;
+}
+
+.image-overlay h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url("/static/Base_App/images/food-banner.3e925a2ccc70.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Why Choose Us */
+.why-us {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #2c2c2c;
+}
+
+.why-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    height: 100%;
+}
+
+.why-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.why-card h4 {
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.why-card p {
+    color: #555;
+    font-size: 15px;
+}
+
+/* CTA Section */
+.cta {
+    background: linear-gradient(135deg, #d62828, #9b1c1c);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+/* CTA Button */
+.cta-btn {
+    display: inline-block;
+    background-color: #ffc107;   /* golden */
+    color: #000;
+    padding: 14px 36px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #ffb300;
+    color: #000;
+    transform: scale(1.05);
+}
+
+/* Back to Home Button */
+.back-btn {
+    display: inline-block;
+    margin-bottom: 25px;
+    padding: 10px 22px;
+    background-color: #212529;   /* dark */
+    color: #fff;
+    border-radius: 30px;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #d62828;   /* restaurant red */
+    color: #fff;
+    transform: translateX(-3px);
+}

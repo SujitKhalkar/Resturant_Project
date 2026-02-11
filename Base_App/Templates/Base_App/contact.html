@@ -1,0 +1,28 @@
+{% extends "Base_App/layout.html" %}
+
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+
+<div class="section-title">
+    <h2>Contact Us</h2>
+    <a href="{% url 'home' %}" class="back-btn">← Back to Home</a>
+
+</div>
+
+<div class="row justify-content-center">
+  <div class="col-md-6">
+    <div class="contact-box text-center">
+        <h5 class="mb-3">📍 Address</h5>
+        <p>Pune, Maharashtra</p>
+
+        <h5 class="mt-4 mb-3">📞 Phone</h5>
+        <p>+91 98765 43210</p>
+
+        <h5 class="mt-4 mb-3">📧 Email</h5>
+        <p>restaurant@email.com</p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

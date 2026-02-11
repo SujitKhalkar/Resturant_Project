@@ -1,0 +1,14 @@
+# from django.contrib import admin
+# from .models import MenuItem
+
+# # Register your models here.
+
+# admin.site.register(MenuItem)
+from django.contrib import admin
+from .models import MenuItem
+
+@admin.register(MenuItem)
+class MenuItemAdmin(admin.ModelAdmin):
+    list_display = ('name', 'price')
+    search_fields = ('name',)
+    list_filter = ('price',)

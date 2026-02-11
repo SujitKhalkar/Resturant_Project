@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Restaurant{% endblock %}</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'Base_App/style.css' %}">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark main-navbar">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="/">🍽️ Foodies Hub</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="{% url 'menu' %}">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="page-bg">
+  <div class="container py-5">
+      {% block content %}{% endblock %}
+  </div>
+</div>
+
+<footer class="footer text-center">
+    <p>© 2026 Foodies Hub | Designed with love</p>
+</footer>
+
+</body>
+</html>

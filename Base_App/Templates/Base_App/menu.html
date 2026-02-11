@@ -1,0 +1,32 @@
+{% extends "Base_App/layout.html" %}
+
+{% block title %}Menu{% endblock %}
+
+{% block content %}
+<h2 class="section-title">Our Menu</h2>
+<a href="{% url 'home' %}" class="back-btn">← Back to Home</a>
+
+
+<div class="row">
+{% for item in items %}
+  <div class="col-md-6">
+    <div class="menu-item d-flex align-items-center">
+        {% if item.image %}
+        <img src="{{ item.image.url }}" class="menu-list-img">
+        {% endif %}
+        <div class="ms-3 flex-grow-1">
+            <h6>{{ item.name }}</h6>
+            <p class="small text-muted">{{ item.description }}</p>
+        </div>
+        <div class="text-end">
+            <strong>₹{{ item.price }}</strong><br>
+            <button class="btn btn-outline-success btn-sm mt-1"
+              onclick="alert('🎉 Order Successfully Placed!')">
+              Order
+            </button>
+        </div>
+    </div>
+  </div>
+{% endfor %}
+</div>
+{% endblock %}
